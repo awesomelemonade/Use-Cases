@@ -1,39 +1,71 @@
 #wrapper{
 	margin: auto;
 	width: 80%;
-	background-color: green;
+	/*background-color: green;*/
 }
 #wrapper ul{
 	list-style: none;
 }
-#wrapper ul > li {
+#wrapper > ul > li {
 	display: flex;
+	/*background-color: purple;*/
+	margin-top: 1em;
 }
-#wrapper ul > li > .left-bar{
+#wrapper > ul > li:first-child{
+	margin-top: 0em;
+}
+#wrapper > ul > li > .post-left-bar{
 	float: left;
 	display: flex;
 }
-#wrapper ul > li > .left-bar > .catagory{
+#wrapper > ul > li > .post-left-bar > .post-catagory{
 	display: block;
 	overflow: hidden;
-	background-color: red;
+	/*background-color: red;*/
 	line-height: 2em;
 	width: 2em;
 	margin-top: auto;
 	margin-bottom: auto;
 }
-#wrapper ul > li > .left-bar > .catagory > .rotated{
+#wrapper > ul > li > .post-left-bar > .post-catagory > .rotated{
 	display: inline-block;
 	white-space: nowrap;
 	transform: translate(0, 100%) rotate(-90deg);
 	transform-origin: 0 0;
 }
-#wrapper ul > li > .left-bar > .catagory > .rotated:after{
+#wrapper > ul > li > .post-left-bar > .post-catagory > .rotated:after{
 	content: "";
 	float: left;
 	margin-top: 100%;
 }
-#wrapper ul > li > .content{
-	background-color: blue;
+#wrapper > ul > li > .post-left-bar > .post-image{
+	width: 100px;
+	height: 100px;
+}
+#wrapper > ul > li > .post-content{
+	/*margin-left: 1em;
+	border-left: 1px solid black;
+	padding-left: 1em;
+	/*background-color: blue;*/
 	overflow: hidden;
+	flex: 1;
+}
+#wrapper > ul > li > .post-content > .post-info{
+	display: flex;
+	/*background-color: yellow;*/
+	overflow: hidden;
+}
+#wrapper > ul > li > .post-content > .post-info > *{
+	float: left;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding: 0em 1em;
+}
+#wrapper > ul > li > .post-content > .post-tags{
+	/*background-color: orange;*/
+	border: 1px solid black;
+	overflow: hidden;
+}
+#wrapper > ul > li > .post-content > .post-tags > li{
+	float: left;
 }
